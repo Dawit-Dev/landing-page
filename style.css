@@ -102,6 +102,13 @@ span:nth-child(7)
 .homepage-wrapper p1 {
    color: red;
 }
+.clickable_image {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  background-color: yellow;
+  border: none;
+}
 .img-div {
   width: 100%;
   text-align: center; 
