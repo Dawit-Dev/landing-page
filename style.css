@@ -102,6 +102,13 @@ span:nth-child(7)
 .homepage-wrapper p1 {
    color: red;
 }
+/*  */
+#image_1 {
+width: 350px;
+  /* height: 250px; */
+  border-radius: 15%;  
+}
+/*  */
 .clickable_image {
   margin: auto;
   text-align: center;
@@ -115,7 +122,7 @@ span:nth-child(7)
 }
 .img {
   width: 350px;
-  heght: 250px;
+  /* heght: 250px; */
   border-radius: 15%;
 }
 .text-wrapper {
