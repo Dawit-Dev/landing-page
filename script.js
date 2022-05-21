@@ -43,3 +43,25 @@ document.getElementById("previous").addEventListener("click", (event) => {
   let element_image_13 = document.getElementById("image_1");
   element_image_13.setAttribute("src", images[0]);
 });
+
+// 
+
+var links, sites, link;
+
+links = [
+  "https://uk.yahoo.com/?p=us&guccounter=1",
+  "https://www.google.co.uk/",
+  "https://www.youtube.com/",
+];
+sites = ["Yahoo", "Google", "Youtube"];
+let element_list = document.getElementById("list");
+links.forEach((link) => {
+  let new_li = document.createElement("li");
+  let new_a = document.createElement("a");
+  new_a.setAttribute("href", link);
+  new_a.innerText = sites.shift();
+
+  new_li.appendChild(new_a);
+
+  element_list.appendChild(new_li);
+});
