@@ -66,27 +66,69 @@ links.forEach((link) => {
   element_list.appendChild(new_li);
 });
 
-// 
-// const hamburger = document.querySelector(".hamburger");
-// const navMenu = document.querySelector(".nav-menu");
+ var fruits, fruit;
 
-// hamburger.addEventListener("click", mobileMenu);
+ fruits = ["Apple ", "Mango ", "Banana ", "Orange ", "Pinapple ", "Avocado "];
+ let element_shopping_items = document.getElementById("shopping-items");
+ fruits.forEach((fruit) => {
+   let new_li = document.createElement("li");
+   new_li.innerText = fruit;
+   let new_span = document.createElement("span");
+   let new_button = document.createElement("button");
+   new_button.setAttribute("id", fruit);
+   new_button.innerText = "add to cart";
 
-// function mobileMenu() {
-//   hamburger.classList.toggle("active");
-//   navMenu.classList.toggle("active");
-// }
-// // Inside the Media Query.
+   new_span.appendChild(new_button);
 
-//     .hamburger.active .bar:nth-child(2) {
-//         opacity: 0;
-//     }
+   new_li.appendChild(new_span);
 
-//     .hamburger.active .bar:nth-child(1) {
-//         transform: translateY(8px) rotate(45deg);
-//     }
+   element_shopping_items.appendChild(new_li);
+ });
 
-//     .hamburger.active .bar:nth-child(3) {
-//         transform: translateY(-8px) rotate(-45deg);
-//     }
-// 
+ document.getElementById("Apple ").addEventListener("click", (event) => {
+   let element_shopping_cart = document.getElementById("shopping-cart");
+   let new_li2 = document.createElement("li");
+   new_li2.innerText = "Apple";
+
+   element_shopping_cart.appendChild(new_li2);
+ });
+
+ document.getElementById("Mango ").addEventListener("click", (event) => {
+   let element_shopping_cart2 = document.getElementById("shopping-cart");
+   let new_li3 = document.createElement("li");
+   new_li3.innerText = "Mango";
+
+   element_shopping_cart2.appendChild(new_li3);
+ });
+
+ document.getElementById("Banana ").addEventListener("click", (event) => {
+   let element_shopping_cart3 = document.getElementById("shopping-cart");
+   let new_li4 = document.createElement("li");
+   new_li4.innerText = "Banana";
+
+   element_shopping_cart3.appendChild(new_li4);
+ });
+
+ document.getElementById("Orange ").addEventListener("click", (event) => {
+   let element_shopping_cart4 = document.getElementById("shopping-cart");
+   let new_li5 = document.createElement("li");
+   new_li5.innerText = "Orange";
+
+   element_shopping_cart4.appendChild(new_li5);
+ });
+
+ document.getElementById("Pinapple ").addEventListener("click", (event) => {
+   let element_shopping_cart5 = document.getElementById("shopping-cart");
+   let new_li6 = document.createElement("li");
+   new_li6.innerText = "Pinapple";
+
+   element_shopping_cart5.appendChild(new_li6);
+ });
+
+ document.getElementById("Avocado ").addEventListener("click", (event) => {
+   let element_shopping_cart6 = document.getElementById("shopping-cart");
+   let new_li7 = document.createElement("li");
+   new_li7.innerText = "Avocado";
+
+   element_shopping_cart6.appendChild(new_li7);
+ });

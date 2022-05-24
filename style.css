@@ -1,107 +1,109 @@
 html,
-body{
+body {
   box-sizing: border-box;
   width: 100vw;
-  overflow-X: hidden;
+  overflow-x: hidden;
   background-color: yellow;
   margin: 0;
 }
 
-.logo {
-  width: 10vw;
-  height: 7vw;
-  border-radius: 4vw;
-  opacity: 0.3;
-  position: fixed;
-}
-.logo:hover {
-  opacity: 1.0;
-}
 .c-site-header {
   display: flex;
-  
-}
-.topnav {
-   
-  overflow: hidden;
-  position: fixed;
-   left: 40%;
-  top: 0;
   width: 100%;
-  margin-bottom: 8rem;
- }
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  background-color: aqua;
+}
+.logo {
+  width: 100px;
+  height: 60px;
+  border-radius: 30px;
+  opacity: 0.3;
+}
+.logo:hover {
+  opacity: 1;
+}
+
 /* Style the links inside the navigation bar */
 .topnav {
-  float: right;
   color: darkblue;
-  text-align: center;
   padding: 14px 16px;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+.nav-link {
   text-decoration: none;
-  font-size: 1.25rem;
+  margin-right: 20px;
 }
 /* Change the color of links on hover */
 .nav-link:hover {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
 }
-*{
+/* *{
   margin: 0;
   padding: 0;
+} */
+.homepage-wrapper,
+.videos-wrapper,
+.about {
+  scroll-margin-top: 65px;
+  margin-top: 5rem;
+  width: 90%;
 }
+.homepage-wrapper {
+  margin: 5rem auto;
+}
+
 .text-box {
   font-size: 7rem;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   color: yellow;
   text-align: center;
   font-weight: bolder;
   /* margin-bottom: 2rem; */
 }
-span{
+.text-box span {
   display: inline-block;
   font-weight: bolder;
   animation: mover 6s linear infinite;
 }
-@keyframes mover{
-  0%{
-    text-shadow: 0 0 30px rgba(0,0,0,0);
+@keyframes mover {
+  0% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0);
   }
-  50%{
-    text-shadow: 0 0 30px rgba(0,0,0,0.30);
+  50% {
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     transform: translateY(30px);
   }
-  100%{
+  100% {
     text-shadow: 10px 10px 20px red;
   }
 }
-span:nth-child(1)
-{
+.text-box span:nth-child(1) {
   animation-delay: 0.5s;
 }
-span:nth-child(2)
-{
+.text-box span:nth-child(2) {
   animation-delay: 1s;
 }
-span:nth-child(3)
-{
+.text-box span:nth-child(3) {
   animation-delay: 1.5s;
 }
-span:nth-child(4)
-{
+.text-box span:nth-child(4) {
   animation-delay: 2s;
 }
-span:nth-child(5)
-{
+.text-box span:nth-child(5) {
   animation-delay: 2.5s;
-}span:nth-child(6)
-{
+}
+.text-box span:nth-child(6) {
   animation-delay: 3s;
 }
-span:nth-child(7)
-{
+.text-box span:nth-child(7) {
   animation-delay: 3.5s;
 }
 .carousel_container {
@@ -114,40 +116,20 @@ span:nth-child(7)
   margin-bottom: 1rem;
 }
 .carousel {
-width: 70%;
+  width: 70%;
   height: 550px;
-  border-radius: 5%;  
+  border-radius: 5%;
 }
 .symbol {
   width: 60px;
   height: 60px;
 }
-.homepage-wrapper,
-.videos-wrapper,
-.about {
- scroll-margin-top: 65px;
- margin-top: 5rem;
- width: 90%;
-}
-.homepage-wrapper {
-  margin: 5rem auto;
-}
-.homepage-wrapper p1 {
-   color: red;
-}
-/*  */
 
 /*  */
-.clickable_image {
-  margin: auto;
-  text-align: center;
-  width: 100%;
-  background-color: yellow;
-  border: none;
-}
+
 .img-div {
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 /* .img {
   width: 350px;
@@ -164,7 +146,8 @@ width: 70%;
   color: green;
 }
 .text-wrapper p {
-   text-decoration: none;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 .img-div h1,
 .about h2,
@@ -208,7 +191,7 @@ width: 70%;
   margin-top: -1rem;
   color: green;
 }
- 
+
 /* .image {
   height: 250px;
   width: 350px;
@@ -228,23 +211,60 @@ width: 70%;
   font-size: 1.5rem;
   text-align: center;
 }
- 
+
 .video {
   margin-bottom: 20px;
   border-radius: 5%;
 }
 .about {
   margin: auto;
-  
 }
-.about h2 {
-  color: red;
-}
+/*   */
 .about p {
   /* color: blue; */
   font-size: 1.5rem;
 }
+.shopping-cart {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+  width: 80%;
+}
+.shopping-cart div {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.cart {
+  background-color: lightslategray;
+}
+.shopping-cart h2 {
+  width: 100%;
+}
+.shopping-cart ol {
+  font-size: 1.25rem;
+  width: 150px;
+}
+.shopping-cart button {
+  background-color: green;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-size: 1.25rem;
+}
+.cyf-b {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  /*   */
+}
+.clickable_image {
+  margin: auto;
+  text-align: center;
+  border: none;
+}
 .c-site-footer {
   width: 90%;
   /* margin-top: 10rem; */
-} 
+}
