@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   position: fixed;
   align-items: center;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .logo {
   width: 100px;
@@ -38,8 +38,11 @@ body {
 }
 /* Change the color of links on hover */
 .nav-link:hover {
-  background-color: #04aa6d;
+  background-color: #469246;
   color: white;
+  padding: 7px 7px;
+  border-radius: 7px;
+  font-size: 1.25rem;
 }
 /* *{
   margin: 0;
@@ -116,8 +119,8 @@ body {
   margin-bottom: 1rem;
 }
 .carousel {
-  width: 70%;
-  height: 550px;
+  width: 60%;
+  height: 570px;
   border-radius: 5%;
 }
 .symbol {
@@ -266,5 +269,8 @@ body {
 }
 .c-site-footer {
   width: 90%;
-  /* margin-top: 10rem; */
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding-left: 30px;
 }
