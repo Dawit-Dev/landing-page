@@ -257,8 +257,10 @@ body {
 }
 .cyf-b {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  width: 80%;
+  
 
   /*   */
 }
@@ -274,3 +276,4 @@ body {
   margin-top: 20px;
   padding-left: 30px;
 }
+ 
