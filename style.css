@@ -3,8 +3,9 @@ body {
   box-sizing: border-box;
   width: 100vw;
   overflow-x: hidden;
-  background-color: yellow;
   margin: 0;
+  background: url(./image/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg);
+  background-size: cover;
 }
 
 .c-site-header {
@@ -35,14 +36,20 @@ body {
 .nav-link {
   text-decoration: none;
   margin-right: 20px;
+  padding: 10px 15px;
+  background-color: rgb(6, 58, 58);
+  color: aliceblue;
+  border-radius: 7px;
+  font-size: 1.25rem;
 }
 /* Change the color of links on hover */
 .nav-link:hover {
   background-color: #469246;
-  color: white;
-  padding: 7px 7px;
-  border-radius: 7px;
-  font-size: 1.25rem;
+  color: white; 
+}
+#onlink {
+  background-color: #469246;
+  color: white; 
 }
 /* *{
   margin: 0;
@@ -51,8 +58,8 @@ body {
 .homepage-wrapper,
 .videos-wrapper,
 .about {
-  scroll-margin-top: 65px;
-  margin-top: 5rem;
+  /* scroll-margin-top: 65px; */
+  margin-top: 7rem;
   width: 90%;
 }
 .homepage-wrapper {
@@ -205,8 +212,7 @@ body {
 .about h2 {
   text-align: center;
   width: 95%;
-  color: yellow;
-  background-color: black;
+  /* background-color: black; */
   padding: 0.5rem 0 0.5rem 0;
   /* margin: 1rem; */
 }
@@ -232,6 +238,13 @@ body {
   justify-content: space-between;
   background-color: lightgray;
   width: 80%;
+  margin: auto;
+}
+.store {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
 }
 .shopping-cart div {
   width: 100%;
