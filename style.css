@@ -46,7 +46,7 @@ body {
   -moz-border-radius-top-left: 10px;
   -moz-border-radius-top-right: 10px;
   font-size: 1.25rem;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 /* Change the color of links on hover */
 .nav-link:hover {
@@ -316,4 +316,5 @@ body {
   margin-top: 20px;
   padding-left: 30px;
 }
+ 
  
