@@ -22,22 +22,27 @@ body {
   border-radius: 30px;
   opacity: 0.3;
 }
-.logo:hover {
+/* .logo:hover {
   opacity: 1;
+} */
+.logo:hover {
+  opacity: 1.0;
+  box-shadow: 10px 10px 18px rgb(230, 4, 4);
 }
 
 /* Style the links inside the navigation bar */
 .topnav {
   color: darkblue;
   padding: 14px 16px;
-  font-size: 1.5rem;
+  
+  font-size: 3rem;
   /* margin-right: 20px; */
   
 }
 .nav-link {
   text-decoration: none;
-  margin-right: 20px;
-  padding: 10px 15px;
+  /* margin-right: 10px; */
+  padding: 15px 25px;
   background-color: rgb(52, 143, 233);
   color: aliceblue;
   /* border-radius: 7px; */
@@ -45,8 +50,11 @@ body {
   -webkit-border-top-left-radius: 10px;
   -moz-border-radius-top-left: 10px;
   -moz-border-radius-top-right: 10px;
-  font-size: 1.25rem;
   border: 2px solid black;
+  width: 75px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.3s ease;
 }
 /* Change the color of links on hover */
 .nav-link:hover {
@@ -58,6 +66,8 @@ body {
   -ms-transition: background-color 200mx ease-in;
   -o-transition: background-color 200ms ease-in;
   transition: background-color 200ms ease-in;
+  box-shadow: 5px 10px 18px red inset;
+   padding: 25px 15px 10px 15px;
   
 }
 #onlink {
@@ -175,7 +185,19 @@ body {
 }
 .text-wrapper p {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+}
+.paragraph {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 95%;
+  gap: 60px;
+} 
+.paragraph-1:hover,
+.paragraph-2:hover {
+  box-shadow: 5px 10px 18px rgb(30, 29, 29);
+  border-radius: 15px;
 }
 .img-div h1,
 .about h2,
@@ -220,6 +242,10 @@ body {
   margin-top: -1rem;
   color: green;
 }
+.image_container:hover {
+  box-shadow: 5px 10px 18px red;
+  border-radius: 15px;
+}
 
 /* .image {
   height: 250px;
@@ -244,13 +270,23 @@ body {
   margin-bottom: 20px;
   border-radius: 5%;
 }
+.video_container:hover {
+  box-shadow: 5px 10px 18px red;
+  border-radius: 15px;
+}
 .about {
   margin: auto;
+  width: 95%;
+}
+.about h2 {
+  text-align: center;
+  font-size: 3rem;
+  width: 95%;
 }
 /*   */
 .about p {
   /* color: blue; */
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .shopping-cart {
   display: flex;
@@ -315,6 +351,17 @@ body {
   font-size: 1.5rem;
   margin-top: 20px;
   padding-left: 30px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  /* background-color: aquamarine; */
+}
+.fa-github {
+  margin-right: 20px;
 }
  
  

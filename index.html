@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <title>Origami</title>
   </head>
   <body>
@@ -18,7 +24,7 @@
       <img class="logo" src="./image/download(1).png" />
       <h1>Dawit-dev</h1>
       <nav class="topnav" aria-label="Main Site Links.">
-        <a id="onlink" class="active nav-link" href="index.html">Home</a>
+        <a id="onlink" class="active nav-link" href="index.html"><i class="fa fa-home"></i></a>
         <a class="nav-link" href="gallery.html">Gallery</a>
         <a class="nav-link" href="videos.html">Videos</a>
         <a class="nav-link" href="about.html">About</a>
@@ -43,27 +49,36 @@
         <!--  -->
         <div class="carousel_container">
           <h2 class="carousel_header">Origami Images Carousel</h2>
-          <img class="carousel" id="image_1" />
-          <br />
-          <button class="symbol" id="previous"><strong>&#171;</strong></button>
-          <button class="symbol" id="next"><strong>&#187;</strong></button>
+          <div class="carousel_button">
+            <img class="carousel" id="image_1" />
+            <br />
+            <button id="previous"><strong>&#171;</strong></button>
+            <button id="next"><strong>&#187;</strong></button>
+          </div>
         </div>
 
         <div class="text-wrapper">
           <h2>History Of Origami</h2>
-          <p>
-            paper folding, Japanese origami, Art of folding objects out of paper
-            without cutting, pasting, or decorating. Its early history is
-            unknown, but it seems to have developed from the older art of
-            folding cloth. Origami has reached its greatest development in
-            Japan, with hundreds of traditional folds and an extensive
-            literature dealing with the art. There are two types of Japanese
-            folds: figures used in ceremonial etiquette, and objects such as
-            animals, flowers, furniture, and human figures. Some objects have
-            amusing action features; best known is the bird that flaps its wings
-            when its tail is pulled. Paper folding has also flourished in Spain,
-            South America, and Germany.
-          </p>
+          <div class="paragraph">
+          <div class="paragraph-1">
+            <p>
+              paper folding, Japanese origami, Art of folding objects out of paper
+              without cutting, pasting, or decorating. Its early history is
+              unknown, but it seems to have developed from the older art of
+              folding cloth. Origami has reached its greatest development in
+              Japan, with hundreds of traditional folds and an extensive
+              literature dealing with the art.
+            </p>
+          </div>
+          <div class="paragraph-2">
+            <p>There are two types of Japanese
+              folds: figures used in ceremonial etiquette, and objects such as
+              animals, flowers, furniture, and human figures. Some objects have
+              amusing action features; best known is the bird that flaps its wings
+              when its tail is pulled. Paper folding has also flourished in Spain,
+              South America, and Germany.</p>
+          </div>
+        </div>
         </div>
       </section>
 
@@ -101,7 +116,15 @@
         </div>
       </div>
       <div class="go">
-        <a href="#top">Go to top</a>
+        <a href="#top"><i class="fa fa-home"></i></a>
+      </div>
+       <div class="footer">
+        <div>
+          <i class="fa fa-github" style="font-size: 48px"></i>
+        </div>
+        <div>
+          <i class="fa fa-linkedin-square" style="font-size: 48px"></i>
+        </div>
       </div>
       <div>
         <p>
@@ -115,6 +138,7 @@
           >
         </p>
       </div>
+     
     </footer>
     <script src="script.js"></script>
   </body>
